@@ -1,0 +1,15 @@
+localhost
+
+[web]
+172.31.40.62
+
+[mongodb]
+172.31.40.62
+
+[mysql]
+172.31.40.62
+
+[db:childern]
+mongodb
+mysql
+
