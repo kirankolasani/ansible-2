@@ -1,0 +1,9 @@
+- name: Variables at play level
+  hosts: web
+  vars:
+   NAME: Kiran-play
+   CITY: Blore
+  tasks:
+  - name: Printing variables from play level
+    ansible.builtin.debug:
+      msg: "Name is : {{NAME}}, City is : {{CITY}}"
