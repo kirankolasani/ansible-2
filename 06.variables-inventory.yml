@@ -1,6 +1,5 @@
 - name: Variables from Inventory
   hosts: web
-  vars: web
   tasks:
   - name: Pritning variables from runtime
     debug:
