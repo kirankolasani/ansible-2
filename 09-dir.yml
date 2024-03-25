@@ -1,0 +1,15 @@
+- name: Checking dir and creating it if not existed
+  hosts: web
+  become: yes
+  vars_prompt:
+    name: dir
+    prompt: Please enter dir name ?
+    private: false
+  tasks: 
+  - name: Checking dir if existed
+    command: ls -lrthd {{dir}}
+    register: output
+    ignore_errors: true
+  - name: printing output
+    debug:
+      msg: "output is : {{output}}"
