@@ -1,7 +1,7 @@
 - name: Variables at play level
   hosts: web
   vars:
-    NAME3: Swathi-Play
+  - NAME3: Swathi-Play
   - NAME1: Kiran-play
     CITY1: Blore
   - NAME2: Varsha-Play
