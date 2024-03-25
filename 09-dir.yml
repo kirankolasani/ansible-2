@@ -13,3 +13,8 @@
   - name: printing output
     debug:
       msg: "output is : {{output}}"
+  - name: Creating dir if not existed
+    file:
+      name: "{{dir}}"
+      state: directory
+    when: output.rc != 0
