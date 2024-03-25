@@ -9,7 +9,7 @@ localhost
 [mysql]
 172.31.40.62
 
-[db:childern]
+[db:children]
 mongodb
 mysql
 
