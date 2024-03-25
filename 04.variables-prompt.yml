@@ -1,0 +1,13 @@
+- name: Prompt variables
+  hosts: web
+  vars_prompt:
+  - name: user
+    prompt: Please enter your name?
+    private: false
+  - name: pwd
+    prompt: Plz enter password ?
+    private: true
+  tasks:
+  - name: Printing variables from prompt
+    debug:
+      msg: "Username is : {{user}}, password is : {{pwd}}"
