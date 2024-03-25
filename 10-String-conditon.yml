@@ -3,7 +3,8 @@
   vars:
     NAME: DevOps
   tasks:
-  - name: Printing msg
-    debug:
-      msg: "Hello, {{NAME}}"
-    when: NAME == "DevOps"
+  - when: NAME == "DevOps"
+    name: Printing msg
+      debug:
+        msg: "Hello, {{NAME}}"
+      
