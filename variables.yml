@@ -7,4 +7,7 @@ packages:
 - unzip
 - vim
 # Dictonary
+employees:
+  emp1: kiran
+  emp2: varsha
 
