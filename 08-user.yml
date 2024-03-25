@@ -2,14 +2,18 @@
   hosts: web
   become: yes
   vars_prompt:
-    name: user
+    name: USER
     prompt: Please enter user name?
     private: false
   tasks:
   - name: Checking user is already existed or not
-    command: id {{user}}
+    command: id {{USER}}
     register: output
     ignore_errors: true
   - name: print output 
     debug:
       msg: "printing output is : {{output}}"
+  - name: Create a user if not existed
+    user:
+      name: "{{USER}}"
+    when: output.rc != 0
