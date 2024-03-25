@@ -1,0 +1,9 @@
+- name: Checking String conditon
+  hosts: localhost
+  vars:
+    NAME: DevOps
+  tasks:
+  - name: Printing msg
+    debug:
+      msg: "Hello, {{NAME}}"
+    when: NAME == "DevOps"
