@@ -1,7 +1,7 @@
 - name: Checking String conditon
   hosts: localhost
   vars:
-    NAME: DevOps
+    NAME: DevOps1
   tasks:
   - when: NAME == "DevOps"
     name: Printing msg
