@@ -9,3 +9,6 @@
   - name: Printing List variables from files
     debug:
       msg: "Packages are : {{packages}}, 1st package is : {{packages[0]}}"
+  - name: Printing Dictory variables from files
+    debug:
+      msg: "1st Emp is : {{employees.emp1}}, 2nd Emp is : {{employees.emp2}}"
