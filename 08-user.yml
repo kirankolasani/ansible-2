@@ -9,6 +9,7 @@
   - name: Checking user is already existed or not
     command: id {{user}}
     register: output
+    ignore_errors: true
   - name: print output 
     debug:
       msg: "printing output is : {{output}}"
