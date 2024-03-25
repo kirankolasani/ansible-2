@@ -22,7 +22,7 @@
       msg: "Name is {{Name}}"
   - name: Pritning Boolean
     debug:
-      msg: "Boolean is {{isDevOps}}"
+      msg: "Boolean is {{isDevOPs}}"
   - name: Pritning List
     debug:
       msg: "List is {{skills}}"
