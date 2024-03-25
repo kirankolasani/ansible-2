@@ -1,0 +1,14 @@
+- name: Checking user and create it if not exit
+  hosts: web
+  become: yes
+  vars_prompt:
+    name: user
+    prompt: Please enter user name?
+    private: false
+  tasks:
+  - name: Checking user is already existed or not
+    command: id {{user}}
+    register: output
+  - name: print output 
+    debug:
+      msg: "printing output is : {{output}}"
