@@ -1,0 +1,32 @@
+- name: Data types
+  hosts: all
+  become: yes
+  vars:
+  - Age: 35
+  - Name: Kiran
+  - isDevOPs: true
+  - Skills:
+    - DevOps
+    - AWS
+    - Azue
+  - Exp:
+      DevOps: 7
+      AWS: 5
+      Azure: 4
+  tasks: 
+  - name: Pritning number
+    debug:
+      msg: "Number is {{Age}}"
+  - name: Pritning Name
+    debug:
+      msg: "Name is {{Name}}"
+  - name: Pritning Boolean
+    debug:
+      msg: "Boolean is {{isDevOps}}"
+  - name: Pritning List
+    debug:
+      msg: "List is {{skills}}"
+  - name: Pritning MAP
+    debug:
+      msg: "Map is {{Exp}}"
+    
