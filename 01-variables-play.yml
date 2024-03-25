@@ -1,9 +1,14 @@
 - name: Variables at play level
   hosts: web
   vars:
-   NAME: Kiran-play
-   CITY: Blore
+  - NAME1: Kiran-play
+    CITY: Blore
+  - NAME2: Varsha-Play
+    CITY: Hyd
   tasks:
-  - name: Printing variables from play level
+  - name: Printing 1st List variables from play level
     ansible.builtin.debug:
-      msg: "Name is : {{NAME}}, City is : {{CITY}}"
+      msg: "Name is : {{NAME1}}, City is : {{CITY}}"
+  - name: Printing 2nd list variables from play level
+    ansible.builtin.debug:
+      msg: "Name is : {{NAME2}}, City is : {{CITY}}"
