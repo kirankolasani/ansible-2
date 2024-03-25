@@ -1,2 +1,10 @@
 NAME: Kiran-files
 CITY: Blore
+# List of variables
+packages:
+- git
+- zip
+- unzip
+- vim
+# Dictonary
+

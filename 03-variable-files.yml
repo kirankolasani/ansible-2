@@ -6,3 +6,6 @@
   - name: Printing variables from files
     debug:
       msg: "Nameis : {{NAME}}, City is : {{CITY}}"
+  - name: Printing List variables from files
+    debug:
+      msg: "Packages are : {{packages}}"
