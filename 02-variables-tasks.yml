@@ -1,0 +1,11 @@
+- name: Varibles at task level
+  hosts: ungrouped
+  become: yes
+  tasks:
+  vars:
+    NAME: Kiran-tasks
+    CITY: Blore
+  - name: Printing variables from tasks
+    ansible.builtin.debug:
+      msg: "Name is : {{NAME}}, City is : {{CITY}}"
+      
