@@ -5,6 +5,6 @@
   tasks:
   - when: NAME == "DevOps"
     name: Printing msg
-      debug:
-        msg: "Hello, {{NAME}}"
+    debug:
+      msg: "Hello, {{NAME}}"
       
