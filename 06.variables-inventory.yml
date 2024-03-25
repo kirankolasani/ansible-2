@@ -1,0 +1,7 @@
+- name: Variables from Inventory
+  hosts: web
+  vars: web
+  tasks:
+  - name: Pritning variables from runtime
+    debug:
+      msg: "Name is : {{NAME}}, City is : {{CITY}}"

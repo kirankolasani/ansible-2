@@ -13,3 +13,7 @@ localhost
 mongodb
 mysql
 
+[web:vars]
+NAME=Kiran-Inventory
+CITY=Blore
+
