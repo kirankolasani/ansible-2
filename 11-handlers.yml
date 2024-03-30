@@ -6,7 +6,7 @@
   tasks:
   - name: Installing package
     yum: 
-      name: package
+      name: "{{package}}"
       state: installed
     notify: 
     - starting nginx
