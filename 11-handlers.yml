@@ -11,4 +11,6 @@
       notify: starting httpd
   handlers:
   - name: starting httpd
-    state: started
+    service:
+      name: httpd
+      state: started
