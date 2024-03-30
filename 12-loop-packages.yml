@@ -1,5 +1,5 @@
 - name: Installing packages using loops
-  host: all
+  hosts: all
   become: yes
   tasks: 
   - name: Installing list of packages
