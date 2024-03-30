@@ -1,12 +1,12 @@
 - name: Handlers expmple
-  hosts: web
+  hosts: all
   become: yes
   vars:
     package: nginx
   tasks:
   - name: Installing package
     yum: 
-      name: "{{package}}"
+      name: package
       state: installed
     notify: 
     - starting nginx
