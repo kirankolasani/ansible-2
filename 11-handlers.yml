@@ -12,6 +12,6 @@
     - starting nginx
   handlers:
   - name: starting nginx
-    service:
+    ansible.builtin.service:
       name: nginx
       state: started
