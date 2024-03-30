@@ -9,6 +9,6 @@
       name: "{{package}}"
       state: installed
       notify: starting httpd
-    handlers:
-    - name: starting httpd
-      state: started
+  handlers:
+  - name: starting httpd
+    state: started
