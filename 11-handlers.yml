@@ -1,0 +1,14 @@
+- name: Handlers expmple
+  hosts: web
+  become: yes
+  vars:
+    package: httpd
+  tasks:
+  - name: Installing package
+    yum: 
+      name: "{{package}}"
+      state: installed
+      notify: starting httpd
+    handlers:
+    - name: starting httpd
+      state: started
