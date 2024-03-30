@@ -2,16 +2,16 @@
   hosts: web
   become: yes
   vars:
-    package: httpd
+    package: nginx
   tasks:
   - name: Installing package
     yum: 
-      name: "{{package}}"
+      name: package
       state: installed
     notify: 
-    - starting httpd
+    - starting nginx
   handlers:
-  - name: starting httpd
+  - name: starting nginx
     service:
-      name: httpd
+      name: nginx
       state: started
