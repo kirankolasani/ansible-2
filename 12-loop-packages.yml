@@ -1,0 +1,13 @@
+- name: IInstalling packages using loops
+  host: all
+  become: yes
+  tasks: 
+  - name: Installing list of packages
+    yum:
+      name: "{{item}}""
+      state: installed
+    loop:
+    - postfix
+    - mailx
+    - curl
+    - zip
