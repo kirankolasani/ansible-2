@@ -9,5 +9,5 @@
     loop:
     - {name: 'postfix' , state: 'absent'}
     - {name: 'mailx' , state: 'installed'}
-    - {name: 'curl' , state: 'absent'}
+    - {name: 'curl --skip-broken' , state: 'absent'}
     - {name: 'zip' , state: 'absent'}
