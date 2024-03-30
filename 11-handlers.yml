@@ -1,5 +1,5 @@
 - name: Handlers expmple
-  hosts: web
+  hosts: localhost
   become: yes
   vars:
     package: httpd
