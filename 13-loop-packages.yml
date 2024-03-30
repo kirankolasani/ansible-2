@@ -1,6 +1,6 @@
 - name: Installing packages using Advance list of map
   hosts: all
-  beccome: yes
+  become: yes
   tasks:
   - name: Installing or removing packages
     yum:
