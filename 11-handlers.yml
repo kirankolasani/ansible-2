@@ -8,7 +8,8 @@
     yum: 
       name: "{{package}}"
       state: installed
-      notify: starting httpd
+    notify: 
+    - starting httpd
   handlers:
   - name: starting httpd
     service:
