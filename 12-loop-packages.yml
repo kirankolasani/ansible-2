@@ -1,4 +1,4 @@
-- name: IInstalling packages using loops
+- name: Installing packages using loops
   host: all
   become: yes
   tasks: 
