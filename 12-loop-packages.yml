@@ -4,7 +4,7 @@
   tasks: 
   - name: Installing list of packages
     yum:
-      name: "{{item}}""
+      name: "{{item}}"
       state: installed
     loop:
     - postfix
